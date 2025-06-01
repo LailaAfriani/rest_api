@@ -12,7 +12,7 @@ $('#search-button').on('click', function () {
            if(result.Response == "True") {
 
            } else {
-            $('#movie-list').html('<h1 class="text-center">Movie Not Found!</h1>')
+            $('#movie-list').html('<h1 class="text-center">' + result.Error + '</h1>')
            }
         }
     });
